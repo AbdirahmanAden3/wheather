@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <style>
+        .texts {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .text {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 150px;
+            background-color: #f9f9f9;
+        }
+
+        .text p, .text span {
+            margin: 5px 0;
+        }
+
+        .material-symbols-outlined {
+            font-size: 40px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="texts">
+        <div class="text"> 
+            <p id="day1">Monday</p>
+            <span class="material-symbols-outlined" id="icon1">cloud</span>
+            <p id="temp1">30 °C</p>
+            <span id="high1">33 °C</span>
+        </div>
+        <div class="text"> 
+            <p id="day2">Tuesday</p>
+            <span class="material-symbols-outlined" id="icon2">cloud</span>
+            <p id="temp2">30 °C</p>
+            <span id="high2">33 °C</span>
+        </div>
+        <div class="text"> 
+            <p id="day3">Wednesday</p>
+            <span class="material-symbols-outlined" id="icon3">cloud</span>
+            <p id="temp3">30 °C</p>
+            <span id="high3">33 °C</span>
+        </div>
+        <div class="text"> 
+            <p id="day4">Thursday</p>
+            <span class="material-symbols-outlined" id="icon4">cloud</span>
+            <p id="temp4">30 °C</p>
+            <span id="high4">33 °C</span>
+        </div>
+        <div class="text"> 
+            <p id="day5">Friday</p>
+            <span class="material-symbols-outlined" id="icon5">cloud</span>
+            <p id="temp5">30 °C</p>
+            <span id="high5">33 °C</span>
+        </div>
+    </div>
+
+    <script>
+        const forecastData = [
+            {
+                day: "Monday",
+                icon: "cloud",
+                temp: "30 °C",
+                high: "33 °C"
+            },
+            {
+                day: "Tuesday",
+                icon: "wb_sunny",
+                temp: "32 °C",
+                high: "35 °C"
+            },
+            {
+                day: "Wednesday",
+                icon: "rainy",
+                temp: "28 °C",
+                high: "30 °C"
+            },
+            {
+                day: "Thursday",
+                icon: "cloudy",
+                temp: "29 °C",
+                high: "31 °C"
+            },
+            {
+                day: "Friday",
+                icon: "storm",
+                temp: "27 °C",
+                high: "29 °C"
+            }
+        ];
+
+        for (let i = 0; i < forecastData.length; i++) {
+            document.getElementById(`day${i+1}`).innerText = forecastData[i].day;
+            document.getElementById(`icon${i+1}`).innerText = forecastData[i].icon;
+            document.getElementById(`temp${i+1}`).innerText = forecastData[i].temp;
+            document.getElementById(`high${i+1}`).innerText = forecastData[i].high;
+        }
+    </script>
+</body>
+</html>

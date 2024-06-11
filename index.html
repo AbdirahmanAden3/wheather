@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/59e02c8d2b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <div class="tow">
+        <div class="search">
+            <input type="text" placeholder="enter city name" id="city">
+            <span class="material-symbols-outlined" id="search" style="position: relative; left: -4;">search</span>
+            <span class="material-symbols-outlined">home</span>
+        </div>
+
+        <div class="details">
+            <div class="div">
+             <h1 id="cityName" style="color: #000;"  >Tashkent</h1>
+            <h2 id="condition" style="width: 100%; color: #000; ">Lorem, ipsum dolor.</h2>
+            </div>
+            <img src="" id="icon" width="100px" height="100px" id="images" 
+            style="margin-top: -1rem; background: #000000; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  "
+                alt="">
+            <h2 id="temp" style="margin-left: 30px; color: #000;">30 °C</h2>
+            <div class="details2">
+                
+            </div>
+        </div>
+          
+             
+                 <!-- <div class="t" style="display: flex; gap: 40px; justify-content: s; " >
+                    <img src="" id="icon" width="100px" height="100px" id="images" alt=""
+                        style="margin-top: -1rem; background: #ab3636; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
+
+                         <div class="cit">
+                            <h1 id="cityName" style="color: #ed1010;" >Tashkent</h1>
+                            <span id="condition">Lorem, ipsum dolor.</span>
+                         </div>
+                 </div>
+                  <spa id="temp" style="margin-left: 30px; color: #000;" >30 °C</spa
+           -->
+           <div class="wheather_container" style="display: flex; flex-direction: row; justify-content: space-around; gap: 30px;   " >
+            <div class="wheather_item">
+                <div class="label" >feels like</div>
+                <div class="value" id="feels" >5 mph</div>
+            </div>
+            <div class="wheather_item">
+                <div class="label">humidity</div>
+                <div class="value" id="h">92%</div>
+            </div>
+            <div class="wheather_item">
+                <div class="label">pressure</div>
+                <div class="value" id="pressure">30.34 in</div>
+            </div>
+            <div class="wheather_item">
+                <div class="label">visibility</div>
+                <div class="value" id ="visibility">44°</div>
+            </div>
+            <div class="wheather_item">
+                <div class="label">Winds</div>
+                <div class="value" id="wind" >44°</div>
+            </div>
+           </div>
+        <div class="sadalin" style="margin-top: 4rem;">
+            <h2 style="float: left; font-weight: bold;">10 days of forecast</h2>   
+          </div>
+  <!-- <div class="texts">
+                <div class="text"> 
+                     <p>Monday</p>
+                    <span class="material-symbols-outlined" style="align-items: center; font-size: 40px;"> cloud </span>
+                    <p>30 °C</p>
+                    <span>33 °C</span>
+             </div>
+             <div class="text"> 
+                <p>Monday</p>
+               <span class="material-symbols-outlined" style="align-items: center;" > cloud </span>
+               <p>30 °C</p>
+               <span>33 °C</span>    
+        </div>
+         <div class="text"> 
+            <p>Monday</p>
+           <span class="material-symbols-outlined" style="align-items: center;" > cloud </span>
+           <p>30 °C</p>
+           <span>33 °C</span>       
+    </div>
+    <div class="text"> 
+        <p>Monday</p>
+       <span class="material-symbols-outlined" style="align-items: center;" > cloud </span>
+       <p>30 °C</p>
+       <span>33 °C</span>       
+</div>
+   </div> -->
+   <div class="texts" id="texts" >
+    <div class="text"> 
+     <p id="day">Monday</p>
+        <span class="material-symbols-outlined" id="icon">cloud</span>
+        <p id="temp">30 °C</p>
+        <span id="high">33 °C</span>
+    </div>
+    
+</div>
+
+</div>
+ <script src="app.js" ></script> 
+</body>
+</html>
