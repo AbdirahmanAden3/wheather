@@ -8,6 +8,9 @@
     <script src="https://kit.fontawesome.com/59e02c8d2b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
      <link rel="stylesheet" href="style.css">
+  
+     
+
 </head>
 <body>
     <div class="container">
@@ -66,6 +69,7 @@
                 <div class="value" id="wind" >44°</div>
             </div>
            </div>
+
         <div class="sadalin" style="margin-top: 4rem;">
             <h2 style="float: left; font-weight: bold;">10 days of forecast</h2>   
           </div>
@@ -101,9 +105,42 @@
         <span class="material-symbols-outlined" id="icon">cloud</span>
         <p id="temp">30 °C</p>
         <span id="high">33 °C</span>
-    </div>
-    
+    </div>   
 </div>
+
+
+
+
+<script type="text/javascript">
+    window.onload = function () {
+    
+    var chart = new CanvasJS.Chart("chartContainer", {
+        theme: "light1", // "light2", "dark1", "dark2"
+        animationEnabled: false, // change to true		
+        title:{
+            text: "Basic Column Chart"
+        },
+        data: [
+        {
+            // Change type to "bar", "area", "spline", "pie",etc.
+            type: "column",
+            dataPoints: [
+                { label: "Garoowe",  y: 30 },
+                { label: "Bosaaso", y: 36  },
+                { label: "Galkacyo", y: 30  },
+                { label: "carmo",  y: 16.5  },
+                { label: "qardho",  y: 27.4 }
+            ]
+        }
+        ]
+    });
+    chart.render();
+    
+    }
+    </script>
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"> </script>
+
 
 </div>
  <script src="app.js" ></script> 
